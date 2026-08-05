@@ -1,24 +1,58 @@
 # Smart Work Companion
 
-AI Workplace Productivity Assistant
+## AI Workplace Productivity Assistant
 
-This project was built with [Lovable](https://lovable.dev).
+### Project Overview
 
-## Build with Lovable
+Smart Work Companion is an AI-powered Workplace Productivity Assistant designed to help professionals automate everyday workplace tasks through a single, user-friendly platform. The application integrates multiple AI-powered tools into one dashboard to improve productivity, enhance communication, and support better workplace decision-making.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3094097e-189d-4d15-890a-13821738a407).
+The project was developed using **Lovable AI** for application design and development, with **ChatGPT** assisting in project planning, prompt engineering, documentation, testing guidance, and content generation.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+---
 
-## Development
+## Features
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+The application includes the following AI-powered features:
+
+* 📧 **Smart Email Generator** – Creates professional emails in different tones such as formal, friendly, and persuasive.
+* 📝 **Meeting Notes Summarizer** – Summarizes meeting notes and extracts key decisions, action items, and deadlines.
+* 📅 **AI Task Planner** – Organizes and prioritizes daily or weekly tasks to improve productivity.
+* 📚 **AI Research Assistant** – Summarizes research topics and provides key insights and recommendations.
+* 💬 **AI Chatbot Interface** – Assists users with workplace-related questions and AI-powered support.
+
+---
+
+## Technologies and Tools Used
+
+* Lovable AI
+* ChatGPT
+* GitHub
+
+---
+
+## Setup Instructions
+
+To run the project locally:
 
 ```sh
-git clone <this-repository-url>
+git clone <your-github-repository-url>
 cd <repository-name>
-npm i
+npm install
 npm run dev
 ```
+
+The application will be available in your browser at the local development address displayed in your terminal.
+
+---
+
+## Responsible AI
+
+This application uses Artificial Intelligence to generate workplace content. AI-generated responses may occasionally contain inaccuracies or incomplete information. Users should review and verify all AI-generated content before using it professionally and should avoid entering confidential or sensitive information.
+
+---
+
+## Team Members
+
+**Individual Project**
+
+* Your Name
