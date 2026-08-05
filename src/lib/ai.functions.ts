@@ -37,11 +37,16 @@ const GenerateEmailInput = z.object({
 export const generateEmail = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => GenerateEmailInput.parse(input))
   .handler(async ({ data }) => {
-    const gateway = createLovableAiGatewayProvider(getApiKey());
-    const prompt = `Write a ${data.tone.toLowerCase()} professional email to ${data.recipient}.\nSubject: ${data.subject}\nPurpose: ${data.purpose}\n\nOutput only the email body and subject line, ready to send. Do not include explanations.`;
+    try {
+      const gateway = createLovableAiGatewayProvider(getApiKey());
+      const prompt = `Write a ${data.tone.toLowerCase()} professional email to ${data.recipient}.\nSubject: ${data.subject}\nPurpose: ${data.purpose}\n\nOutput only the email body and subject line, ready to send. Do not include explanations.`;
 
-    const text = await generateResponse(gateway, prompt);
-    return { text };
+      const text = await generateResponse(gateway, prompt);
+      return { text };
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Failed to generate email";
+      return { text: `Error: ${message}` };
+    }
   });
 
 const SummarizeMeetingNotesInput = z.object({
