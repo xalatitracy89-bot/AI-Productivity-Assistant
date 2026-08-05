@@ -80,14 +80,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Workwise AI — Workplace Productivity Assistant" },
-      { name: "description", content: "AI-powered workplace productivity assistant for smarter emails, meeting summaries, task planning, and research." },
+      { title: "Dashboard — Workwise AI" },
+      { name: "description", content: "Workwise AI dashboard with AI-powered workplace productivity tools." },
       { name: "author", content: "Workwise AI" },
-      { property: "og:title", content: "Workwise AI — Workplace Productivity Assistant" },
-      { property: "og:description", content: "AI-powered workplace productivity assistant for smarter emails, meeting summaries, task planning, and research." },
+      { property: "og:title", content: "Dashboard — Workwise AI" },
+      { property: "og:description", content: "Workwise AI dashboard with AI-powered workplace productivity tools." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@WorkwiseAI" },
+      { name: "twitter:title", content: "Dashboard — Workwise AI" },
+      { name: "twitter:description", content: "Workwise AI dashboard with AI-powered workplace productivity tools." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/346beeb4-a81a-4a3c-8680-4e78126c9288" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/346beeb4-a81a-4a3c-8680-4e78126c9288" },
     ],
     links: [
       {
